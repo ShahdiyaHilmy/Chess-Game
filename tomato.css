@@ -1,0 +1,56 @@
+
+button{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    width: 90px;
+    height:60px;
+    background: black;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-weight:500px;
+}
+
+.one{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 90px;
+    height:60px;
+    background: black;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-weight:500px;
+}
+
+.two{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 90px;
+    height:60px;
+    background: black;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-weight:500px;
+}
+
+.three{
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 90px;
+    height:60px;
+    background: black;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    color:white;
+    font-weight:500px;
+}

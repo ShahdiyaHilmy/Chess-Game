@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;1,300;1,400&family=Poppins:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;1,300;1,400&family=Poppins:wght@100;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+main{
+    width:99vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    background-color: black;
+}
+.bg-img{
+    width:100%;
+    height:100%;
+    opacity:0;
+    transform:scale(0);
+    transform:scale(1);
+        opacity:1;
+}
+
+.bg-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+   
+}
+.navbar_{
+    width:100%;
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 3.5rem;
+    transition:all 0.3s;
+    opacity:0;
+}
+.text{
+    position:absolute;
+    top:40%;
+    padding:5 5rem;
+    font-size:1.8rem;
+    color:white;
+}
+.text h1{
+    opacity:0;
+    font-weight:500;
+    font-size:100px;
+    padding-left: 25%;
+}
+.text h1 span{
+    background-color:black;
+    padding:0.3rem 1rem;
+    display:inline-block;
+    transform:tarnslateX(50px);
+    opacity:0;
+    animation:animate2 1s ease-in 2s forwards;
+}
+@keyframes grow2{
+    100%{
+        width:92%;
+    }
+}
+@keyframes grow{
+    10%{
+        transform:scale(0.1);
+        opacity:1;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes animate{
+    100%{
+        opacity:1;
+    }
+}
+@keyframes animate2{
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+@keyframes animate3{
+    100%{
+        opacity:1;
+    }
+}
+
+
+
+
+

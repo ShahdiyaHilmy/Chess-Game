@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;1,300;1,400&family=Poppins:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,300;1,300;1,400&family=Poppins:wght@100;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+main{
+    width:99vw;
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    background-color: black;
+}
+.bg-img{
+    width:100%;
+    height:100%;
+    opacity:0;
+    transform:scale(0);
+    animation:grow 2s ease-out 0.8s forwards;
+}
+
+.bg-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+   
+}
+.navbar_{
+    width:100%;
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 3.5rem;
+    transition:all 0.3s;
+    opacity:0;
+    animation:animate3 3s ease forwards;
+}
+.navbar_ ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.navbar_ ul li a{
+    margin-left:3rem;
+    font-size:1.2rem;
+    color:white;
+    text-transform:capitalize;
+    transition: all 0.3s;
+}
+.navbar_ ul li a:hover{
+    color:gray;
+}
+.navbar_ .logo a{
+    font-size:1.8rem;
+    color:white;
+}
+.text{
+    position:absolute;
+    top:40%;
+    padding:5 5rem;
+    font-size:1.8rem;
+    color:white;
+}
+.text h1{
+    opacity:0;
+    animation:animate 3s ease forwards;
+    font-weight:500;
+    font-size:100px;
+    padding-left: 25%;
+}
+.text h1 span{
+    background-color:black;
+    padding:0.3rem 1rem;
+    display:inline-block;
+    transform:tarnslateX(50px);
+    opacity:0;
+    animation:animate2 1s ease-in 2s forwards;
+}
+.para{
+    padding:0;
+    width:20rem;
+    font-size:1.2rem;
+    right:3%;
+    transform:translate(50px);
+    opacity:0;
+    animation:animate2 2s ease 2s forwards;
+}
+.line{
+    width:0;
+    height:0.01rem;
+    position:absolute;
+    background-color:gray;
+    top:10%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    animation:grow2 2s ease 2s forwards;
+}
+@keyframes grow2{
+    100%{
+        width:92%;
+    }
+}

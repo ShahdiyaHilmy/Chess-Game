@@ -1,0 +1,53 @@
+#board {
+    width: 560px;
+    height: 560px;
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px; 
+    width: 70px; 
+    background-color: pink;
+    position: relative;
+    border-radius: 5px;
+}
+
+.tile svg {
+    height: 60px; 
+    width: 60px;  
+    margin: 5px;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.piece {
+    position: relative;
+    z-index: 9;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.black_p {
+    fill: black;
+    stroke: white;
+    stroke-width: 15;
+}
+
+.white_p {
+    fill: white;
+    stroke: black;
+    stroke-width: 15;
+}

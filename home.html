@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="over.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="about.css">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .bg-img {
+                position: relative;
+            }
+    
+            .bg-img::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5); /* Adjust the last value for transparency (0 to 1) */
+                z-index: 1;
+            }
+    
+            #game-over {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                z-index: 2;
+                display: none;
+            }
+    
+            #restart-btn {
+                padding: 10px 20px;
+                background-color: Black;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    
+        <body>
+        <main>
+            <div class="bg-img">
+                <img src="01.jpeg">
+            </div>
+        </main>
+            <div class="navbar_">
+                <div class="logo">
+                    <a href="home.html">Royal Rivals </a>
+                </div>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                    <li><a href="new.php">New Game</a></li>
+                    <li><a href="signup.php">Login/Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="text">
+                <h1>Royal <span>Rivals</span></h1>
+            </div>
+            <div class="line">
+
+            </div>
+        </main>
+            <script src="swiper-bundle.min.js"></script>
+            <script src="script.js"></script>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                  var readMoreLink = document.querySelector(".read-more-link");
+                  var whyChooseUsSection = document.querySelector("#why-choose-us");
+                  if (readMoreLink && whyChooseUsSection) {
+                      readMoreLink.addEventListener("click", function (event) {
+                          event.preventDefault();
+                          whyChooseUsSection.scrollIntoView({ behavior: "smooth" });
+                      });
+                  }
+              });
+          </script>
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+          
+    </body>
+</html>
+    <!-- <body>
+        <main>
+            <div class="bg-img">
+                <img src="01.jpeg">
+            </div>
+            <div class="navbar_">
+                <div class="logo">
+                    <a href="home.html">Royal Rivals </a>
+                </div>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                    <li><a href="new.php">New Game</a></li>
+                    <li><a href="signup.php">Login/Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="text">
+                <h1>Royal <span>Rivals</span></h1>
+            </div>
+            <div class="line">
+
+            </div>
+        </main>
+            <script src="swiper-bundle.min.js"></script>
+            <script src="script.js"></script>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                  var readMoreLink = document.querySelector(".read-more-link");
+                  var whyChooseUsSection = document.querySelector("#why-choose-us");
+                  if (readMoreLink && whyChooseUsSection) {
+                      readMoreLink.addEventListener("click", function (event) {
+                          event.preventDefault();
+                          whyChooseUsSection.scrollIntoView({ behavior: "smooth" });
+                      });
+                  }
+              });
+          </script>
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+          
+    </body>
+</html> -->
